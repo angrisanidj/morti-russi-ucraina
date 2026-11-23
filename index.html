@@ -6,20 +6,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Lora:wght@700&display=swap" rel="stylesheet">
-<title>Morti russi nei dati Rosstat</title>
-<meta name="description" content="I dati trapelati di Rosstat analizzati da Mediazona e Meduza: grafici interattivi su morti registrati, morti stimati e ritardi di registrazione.">
+<title>I morti russi in guerra secondo i dati di Rosstat</title>
+<meta name="description" content="Le testate indipendenti Mediazona e Meduza hanno analizzato quasi tutti gli atti di morte registrati in Russia dal 2021 e sottratti a Rosstat da due gruppi di hacker bielorussi e ucraini.">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="it_IT">
 <meta property="og:url" content="https://angrisanidj.github.io/morti-russi-ucraina/">
-<meta property="og:title" content="Nei registri russi ci sono 490mila morti in guerra. Quelli reali sono circa 720mila">
-<meta property="og:description" content="I dati trapelati di Rosstat analizzati da Mediazona e Meduza: grafici interattivi su morti registrati, morti stimati e ritardi di registrazione.">
+<meta property="og:title" content="Circa 490mila morti russi in guerra compaiono già nei registri. La stima sale a 720mila">
+<meta property="og:description" content="Le testate indipendenti Mediazona e Meduza hanno analizzato quasi tutti gli atti di morte registrati in Russia dal 2021 e sottratti a Rosstat da due gruppi di hacker bielorussi e ucraini.">
 <meta property="og:image" content="https://angrisanidj.github.io/morti-russi-ucraina/condivisione.png">
 <meta property="og:image:width" content="2400">
 <meta property="og:image:height" content="1350">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@putino">
-<meta name="twitter:title" content="Nei registri russi ci sono 490mila morti in guerra. Quelli reali sono circa 720mila">
-<meta name="twitter:description" content="I dati trapelati di Rosstat analizzati da Mediazona e Meduza: grafici interattivi su morti registrati, morti stimati e ritardi di registrazione.">
+<meta name="twitter:title" content="Circa 490mila morti russi in guerra compaiono già nei registri. La stima sale a 720mila">
+<meta name="twitter:description" content="Le testate indipendenti Mediazona e Meduza hanno analizzato quasi tutti gli atti di morte registrati in Russia dal 2021 e sottratti a Rosstat da due gruppi di hacker bielorussi e ucraini.">
 <meta name="twitter:image" content="https://angrisanidj.github.io/morti-russi-ucraina/condivisione.png">
 <link rel="canonical" href="https://angrisanidj.github.io/morti-russi-ucraina/">
 
@@ -155,6 +155,18 @@ html, body { margin: 0; padding: 0; background: #fff; }
 #ig .foot { background: var(--dark); color: #9BA5B7; padding: 34px var(--pad) 40px; display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; font-size: 15.5px; line-height: 1.55; }
 #ig .foot b { color: #fff; }
 #ig .foot .h { font-weight: 800; font-size: 24px; color: #fff; white-space: nowrap; }
+/* testi corretti */
+#ig .mast .l { flex-wrap: wrap; row-gap: 6px; }
+#ig .mast { align-items: flex-start; }
+#ig .fc span:last-child { text-align: right; max-width: 54%; }
+#ig .cg .t b.ld { display: block; color: #fff; font-size: 19px; line-height: 1.3; margin-bottom: 6px; }
+#ig .two .n span { font-family: var(--sans); font-size: 21px; font-weight: 800; margin-left: 12px; vertical-align: 9px; }
+#ig .two .ld { font-family: var(--serif); font-weight: 700; font-size: 26px; line-height: 1.2; letter-spacing: -.2px; }
+#ig .ml b { display: block; }
+#ig .nts .n { font-family: var(--serif); font-weight: 700; font-size: 24px; line-height: 1.2; letter-spacing: -.2px; }
+#ig .fl { align-items: start; }
+#ig .fc span:first-child { white-space: nowrap; }
+#ig .fr .hd { flex-direction: column; align-items: flex-start; gap: 6px; }
 
 /* ---------- web ---------- */
 html, body { background: #fff; overflow-x: clip; }
@@ -228,6 +240,22 @@ html, body { background: #fff; overflow-x: clip; }
   #ig .nts { grid-template-columns: 1fr; gap: 24px; } #ig .nts .n { font-size: 28px; } #ig .nts .t { font-size: 16px; }
   #ig .foot { font-size: 13.5px; }
 }
+
+/* testi corretti */
+#ig .tip { white-space: normal; width: max-content; max-width: min(280px, 84vw); }
+#ig .tip i { vertical-align: 0; }
+@media (max-width: 760px) {
+  #ig .nts .n { font-size: 21px; }
+  #ig .two .ld { font-size: 22px; }
+  #ig .fc span:last-child { max-width: none; text-align: left; }
+  #ig .cg .t b.ld { font-size: 17px; }
+}
+@media (max-width: 760px) { #ig .fc span:first-child { white-space: normal; } }
+@media (max-width: 760px) {
+  #ig .fl > div:first-child { flex: 1 1 0; }
+  #ig .fl .o { flex: none; max-width: 52%; }
+  #ig .fl .n { font-size: clamp(34px, 10vw, 72px); }
+}
 </style>
 </head>
 <body>
@@ -235,100 +263,100 @@ html, body { background: #fff; overflow-x: clip; }
 
 <header class="hero">
   <div class="bar"></div>
-  <div class="mast"><div class="l"><span class="badge">GUERRA IN UCRAINA</span><svg class="flag" width="30" height="20" viewBox="0 0 30 20"><rect y="0.00" width="30" height="6.97" fill="#FFFFFF"/><rect y="6.67" width="30" height="6.97" fill="#0039A6"/><rect y="13.33" width="30" height="6.97" fill="#D52B1E"/></svg><span>I dati trapelati di Rosstat · atti registrati fino al 29 settembre 2026</span></div><div class="r">@putino</div></div>
-  <h1>Nei registri russi ci sono 490mila morti in guerra. Quelli reali sono circa 720mila</h1>
-  <p class="deck">Hacker bielorussi e ucraini hanno sottratto a Rosstat quasi tutti gli atti di morte registrati in Russia dal 2021. Mediazona e Meduza li hanno verificati e contati: <b>i dati sono autentici</b>, e <b>più di 200mila morti devono ancora entrare nei registri</b>.</p>
+  <div class="mast"><div class="l"><span class="badge">GUERRA IN UCRAINA</span><svg class="flag" width="30" height="20" viewBox="0 0 30 20"><rect y="0.00" width="30" height="6.97" fill="#FFFFFF"/><rect y="6.67" width="30" height="6.97" fill="#0039A6"/><rect y="13.33" width="30" height="6.97" fill="#D52B1E"/></svg><span>L’inchiesta sui dati di Rosstat, l’istituto di statistica russo · Registrazioni fino al 29 settembre 2026</span></div><div class="r">@putino</div></div>
+  <h1>Circa 490mila morti russi in guerra compaiono già nei registri. La stima sale a 720mila</h1>
+  <p class="deck">Le testate indipendenti Mediazona e Meduza hanno analizzato quasi tutti gli atti di morte registrati in Russia dal 2021 e sottratti a Rosstat da due gruppi di hacker bielorussi e ucraini. Hanno verificato l’autenticità dei dati e individuato circa 490mila caduti. Secondo la loro stima, altri 230mila militari russi erano già morti, ma il loro decesso doveva ancora essere registrato.</p>
   <div class="fl">
-    <div><div class="n">490mila</div><div class="s">morti già registrati, almeno</div></div>
-    <div class="o"><div class="n">+230mila</div><div class="s">stimati, non ancora registrati</div></div>
+    <div><div class="n">490mila</div><div class="s">caduti già individuati nei registri, cifra arrotondata</div></div>
+    <div class="o"><div class="n">+230mila</div><div class="s">altri caduti stimati, ancora da registrare</div></div>
   </div>
   <div class="field"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i><i class="e"></i></div>
-  <div class="fc"><span>Ogni punto rappresenta mille morti · settembre 2026</span><span>Totale stimato: <b>circa 720mila</b>, «forse anche di più»</span></div>
+  <div class="fc"><span>Ogni punto rappresenta mille morti · Settembre 2026</span><span><b>Circa 720mila morti in totale</b> secondo la stima degli autori, «forse anche di più»</span></div>
   <div class="keys">
-    <div><div class="n">11.658.178</div><div class="t">atti di morte unici analizzati, registrati dal 2021 a settembre 2026</div></div>
-    <div><div class="n">95,1%</div><div class="t">dei caduti già noti per nome è stato ritrovato nei dati trapelati</div></div>
-    <div><div class="n">−6%</div><div class="t">l'errore del modello nell'ultima verifica sul passato: la stima pecca per difetto</div></div>
+    <div><div class="n">11.658.178</div><div class="t">atti di morte analizzati, contando ogni atto una sola volta, dal 2021 a settembre 2026</div></div>
+    <div><div class="n">95,1%</div><div class="t">dei caduti già identificati per nome trova riscontro nei registri</div></div>
+    <div><div class="n">−6%</div><div class="t">lo scarto nell’ultima verifica sui dati passati. Il modello aveva stimato il 6% di morti in meno</div></div>
   </div>
 </header>
 
 <section class="band">
-  <h2>Il divario tra i morti e i registri si allarga</h2>
-  <p class="sf">Morti russi dall'inizio dell'invasione, per data della morte. La linea nera conta gli atti già registrati, la rossa è la stima di Mediazona e Meduza: lo spazio tra le due sono morti che nei registri non ci sono ancora.</p>
-  <p class="hint">Tocca i grafici, o passaci sopra con il mouse, per leggere i valori.</p><div class="key top"><span><i class="ln" style="background:#D5202F"></i>Stima di Mediazona e Meduza</span><span><i class="ln" style="background:#10141F"></i>Atti già registrati</span><span><i style="background:rgba(213,32,47,.16)"></i>Margine d'incertezza</span></div><div class="fig" id="fig-cum"><svg role="img" aria-label="Morti russi cumulati: stimati e registrati"></svg></div>
-  <h3>Ogni settimana migliaia di morti che i registri vedranno tra mesi</h3>
-  <p class="h3s">Morti a settimana, per data della morte. Le ultime settimane sembrano le meno sanguinose solo perché gli atti non sono ancora arrivati.</p>
-  <div class="key top"><span><i class="ln" style="background:#D5202F"></i>Stimati</span><span><i class="ln" style="background:#10141F"></i>Già registrati</span></div><div class="fig" id="fig-week"><svg role="img" aria-label="Morti russi a settimana: stimati e registrati"></svg></div>
-  <p class="note">Grafici ridisegnati da quelli di Mediazona e Meduza: i totali di 720mila e 488mila sono quelli pubblicati, gli altri valori sono letti dai grafici originali e quindi approssimati. Il «488mila» del grafico corrisponde ai «490mila» del testo, il divario di 230mila è la differenza tra 720mila e 490mila. Il titolo dell'inchiesta arrotonda la stima a «circa 700mila». A fine 2025 una stima precedente, che escludeva gran parte dei dispersi, si fermava a 350mila.</p>
+  <h2>Cresce la distanza tra i morti stimati e quelli registrati</h2>
+  <p class="sf">Per ogni data, il grafico mostra quanti militari russi erano morti dall’inizio dell’invasione su larga scala dell’Ucraina. La linea nera conta i caduti che compaiono nei registri di Rosstat. La linea rossa indica il totale stimato da Mediazona e Meduza. La distanza tra le due linee indica quanti caduti, secondo la stima, mancavano ancora dai registri alla data di chiusura dei dati.</p>
+  <p class="hint">Tocca un punto del grafico o passaci sopra con il mouse per leggerne i valori.</p><div class="key top"><span><i class="ln" style="background:#D5202F"></i>Totale stimato</span><span><i class="ln" style="background:#10141F"></i>Morti già registrate</span><span><i style="background:rgba(213,32,47,.16)"></i>Margine di incertezza della stima</span></div><div class="fig" id="fig-cum"><svg role="img" aria-label="Morti russi cumulati: stimati e registrati"></svg></div>
+  <h3>Perché nelle ultime settimane il numero dei morti sembra calare</h3>
+  <p class="h3s">Il grafico raggruppa i caduti per settimana di morte. Un decesso può essere registrato mesi dopo. Per le settimane più recenti, quindi, gli atti disponibili danno ancora un quadro parziale.</p>
+  <div class="key top"><span><i class="ln" style="background:#D5202F"></i>Morti stimate</span><span><i class="ln" style="background:#10141F"></i>Morti già registrate</span></div><div class="fig" id="fig-week"><svg role="img" aria-label="Morti russi a settimana: stimati e registrati"></svg></div>
+  <p class="note">Mediazona e Meduza indicano nei grafici 720mila morti stimate e 488mila già registrate. Nel testo dell’infografica arrotondiamo la seconda cifra a 490mila. La differenza è di circa 230mila. Gli altri valori riportati qui sono approssimativi perché ricavati dai grafici originali. Arrotondata alle centinaia di migliaia, la stima è di «circa 700mila» morti. Una loro stima precedente, riferita alla fine del 2025, si fermava a 350mila ed escludeva gran parte dei dispersi.</p>
 </section>
 
 <section class="band alt">
-  <h2>Le morti dei dispersi entrano nei registri con anni di ritardo</h2>
-  <p class="sf">Atti di morte di militari, in migliaia. Ogni riga è il trimestre in cui i soldati sono morti; ogni colonna dice quanti trimestri sono passati prima che la morte venisse registrata. Dati del registro al 30 giugno 2026.</p>
-  <p class="hint">Tocca una cella per leggere il valore.</p><div class="fig" id="fig-heat"><svg role="img" aria-label="Atti di morte per trimestre della morte e ritardo di registrazione"></svg></div>
-  <div class="key"><span><i style="background:#FBF3F1"></i>meno di 100 atti</span><span><i style="width:120px;background:linear-gradient(90deg,#FCE4E0,#F4A096,#D5202F,#6E0A1A)"></i>da 100 a oltre 13mila atti</span><span><i style="background:repeating-linear-gradient(45deg,#C9CED8 0 2px,#F3F4F6 2px 6px)"></i>non ancora arrivati</span></div>
-  <p class="take"><b>Nel 2022 quasi tutte le morti venivano registrate entro il trimestre successivo.</b> Dalla seconda metà del 2023 la maggior parte degli atti arriva più tardi, e dalla fine del 2024 il picco cade nel trimestre dopo la morte. Gli atti continuano ad arrivare per anni: per questo il dato degli ultimi mesi è ancora molto incompleto.</p>
+  <h2>Per registrare la morte di un disperso possono volerci anni</h2>
+  <p class="sf">Ogni riga raggruppa i militari morti nello stesso trimestre, cioè nello stesso periodo di tre mesi. Leggendo la riga da sinistra a destra si vede quante morti sono state registrate nello stesso trimestre, quante nel trimestre successivo e quante ancora più tardi. I valori sono espressi in migliaia di atti. I dati della tabella si fermano al 30 giugno 2026.</p>
+  <p class="hint">Tocca una casella per leggere il valore.</p><div class="fig" id="fig-heat"><svg role="img" aria-label="Atti di morte per trimestre della morte e ritardo di registrazione"></svg></div>
+  <div class="key"><span><i style="background:#FBF3F1"></i>Meno di 100 atti</span><span><i style="width:120px;background:linear-gradient(90deg,#FCE4E0,#F4A096,#D5202F,#6E0A1A)"></i>Da 100 a oltre 13mila atti</span><span><i style="background:repeating-linear-gradient(45deg,#C9CED8 0 2px,#F3F4F6 2px 6px)"></i>Registrazioni successive al 30 giugno 2026</span></div>
+  <p class="take"><b>Nel 2022 quasi tutte le morti venivano registrate entro la fine del trimestre successivo a quello del decesso.</b> Dalla seconda metà del 2023 i ritardi sono diventati più frequenti. Dalla fine del 2024 il maggior numero di registrazioni si concentra nel trimestre successivo alla morte. Alcuni atti arrivano anche a distanza di anni. Per questo i dati sui mesi più recenti sono i più incompleti.</p>
 </section>
 
 <section class="band">
-  <h2>Come si contano i morti che mancano</h2>
-  <p class="sf">Il modello di Mediazona e Meduza parte dagli annunci di ricerca pubblicati dai familiari dei soldati dispersi.</p>
+  <h2>Come si stima il numero dei morti ancora da registrare</h2>
+  <p class="sf">Mediazona e Meduza partono dagli annunci con cui i familiari cercano i soldati dispersi. Poi verificano se e quando la morte di quei soldati compare nei registri.</p>
   <div class="steps">
-    <div class="st"><div class="k">1</div><div><b>Gli annunci dei familiari</b>Dal 2023 ne sono stati raccolti per oltre 160mila persone. Quasi tutte sono risultate morte: meno di una su dieci è stata ritrovata viva.<div class="ppl"><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#fff" stroke="#10141F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#fff" stroke="#10141F" stroke-width="3" stroke-linejoin="round"/></svg></div></div></div>
-    <div class="st"><div class="k">2</div><div><b>Il legame con i registri</b>Fino al 40% delle registrazioni molto tardive corrisponde a un annuncio, una quota stabile nel tempo. Gli annunci misurano quindi quanti dispersi entreranno nei registri.</div></div>
-    <div class="st"><div class="k">3</div><div><b>Le curve di registrazione</b>Per ogni canale il modello calcola la probabilità che un atto arrivi dopo un certo ritardo e ricostruisce quanti ne mancano, come un attuario che stima i sinistri non ancora denunciati (metodo di Berkson e Gage, 1952).</div></div>
-    <div class="st"><div class="k">4</div><div><b>Il 2026</b>I dati sono troppo incompleti: gli autori usano un modello lineare sul registro delle successioni e riportano la stima prudente. Tra l'ultimo contatto e la morte passano in mediana circa 3 giorni, tra l'ultimo contatto e l'annuncio circa 40.</div></div>
+    <div class="st"><div class="k">1</div><div><b>Gli annunci di ricerca</b>Dal 2023 sono stati raccolti annunci per oltre 160mila dispersi. Meno di uno su dieci è stato ritrovato vivo.<div class="ppl"><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#D5202F" stroke="#D5202F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#D5202F" stroke="#D5202F" stroke-width="3" stroke-linejoin="round"/></svg><svg width="20" height="38" viewBox="0 0 34 64"><circle cx="17" cy="9" r="8" fill="#fff" stroke="#10141F" stroke-width="3"/><path d="M4 30a13 13 0 0 1 26 0v14h-5v18h-15v-18h-6z" fill="#fff" stroke="#10141F" stroke-width="3" stroke-linejoin="round"/></svg></div></div></div>
+    <div class="st"><div class="k">2</div><div><b>Il confronto con gli atti di morte</b>Tra i soldati la cui morte viene registrata con molto ritardo, fino al 40% era già stato cercato con un annuncio. Questa quota è rimasta stabile nel tempo. Gli autori usano quindi il numero degli annunci per stimare quanti dispersi compariranno nei registri.</div></div>
+    <div class="st"><div class="k">3</div><div><b>I tempi di registrazione</b>Una morte può essere registrata sulla base di un certificato medico, di un certificato militare o di una sentenza. Per ogni tipo di documento, gli autori calcolano quanto tempo passa di solito tra la morte e la registrazione. Da questi ritardi stimano quanti atti mancano ancora. Il calcolo si basa sul metodo di Berkson e Gage (1952).</div></div>
+    <div class="st"><div class="k">4</div><div><b>La stima per il 2026</b>Gli atti di morte sono ancora troppo incompleti. Gli autori usano quindi l’andamento delle pratiche di successione, aperte per trasmettere agli eredi i beni di una persona morta. Applicano un modello lineare e riportano la stima più prudente. Anche gli annunci di ricerca arrivano in ritardo. Dall’ultimo contatto con il soldato passano circa 3 giorni fino alla morte e circa 40 fino all’annuncio. Sono valori mediani, cioè quelli che dividono i casi in due metà.</div></div>
   </div>
-  <h3>I certificati medici calano, crescono tribunali e certificati militari</h3>
-  <p class="h3s">I tre documenti con cui viene registrata la morte di un disperso, per mese di registrazione, secondo il modello.</p>
-  <div class="key top"><span><i class="ln" style="background:#10141F"></i>Certificato dei militari</span><span><i class="ln" style="background:#B77400"></i>Sentenza del tribunale</span><span><i class="ln" style="background:#0057B7"></i>Certificato medico</span></div><div class="fig" id="fig-chan"><svg role="img" aria-label="Intensità di registrazione per tipo di documento"></svg></div>
-  <h3>Messo alla prova, il modello ha sempre sbagliato per difetto</h3>
-  <p class="h3s">Il modello è stato fatto girare su cinque date passate, usando solo gli atti registrati fino a quel giorno, e confrontato con i dati di oggi.</p>
+  <h3>Meno registrazioni con certificato medico, più registrazioni con certificato militare o sentenza</h3>
+  <p class="h3s">Per ogni mese, il grafico mostra quanto è frequente, secondo il modello, il ricorso a ciascuno dei tre documenti per registrare la morte di un disperso.</p>
+  <div class="key top"><span><i class="ln" style="background:#10141F"></i>Certificato militare</span><span><i class="ln" style="background:#B77400"></i>Sentenza del tribunale</span><span><i class="ln" style="background:#0057B7"></i>Certificato medico</span></div><div class="fig" id="fig-chan"><svg role="img" aria-label="Intensità di registrazione per tipo di documento"></svg></div>
+  <h3>In tutte e cinque le verifiche il modello ha sottostimato i morti</h3>
+  <p class="h3s">Gli autori hanno scelto cinque date e ripetuto il calcolo usando soltanto gli atti disponibili a ciascuna data. Hanno poi confrontato ogni stima con i dati più completi disponibili oggi. Un valore negativo indica di quanto la stima era troppo bassa.</p>
   <div class="bt"><div class="btr"><div class="btd">1 febbraio 2025</div><div class="btb"><div class="bl"><b class="t" style="--w:0.52"></b><span>−26%</span></div><div class="bl"><b class="m" style="--w:0.98"></b><span>−49%</span></div></div></div><div class="btr"><div class="btd">1 maggio 2025</div><div class="btb"><div class="bl"><b class="t" style="--w:0.18"></b><span>−9%</span></div><div class="bl"><b class="m" style="--w:0.38"></b><span>−19%</span></div></div></div><div class="btr"><div class="btd">1 agosto 2025</div><div class="btb"><div class="bl"><b class="t" style="--w:0.1"></b><span>−5%</span></div><div class="bl"><b class="m" style="--w:0.22"></b><span>−11%</span></div></div></div><div class="btr"><div class="btd">1 novembre 2025</div><div class="btb"><div class="bl"><b class="t" style="--w:0.14"></b><span>−7%</span></div><div class="bl"><b class="m" style="--w:0.4"></b><span>−20%</span></div></div></div><div class="btr"><div class="btd">1 febbraio 2026</div><div class="btb"><div class="bl"><b class="t" style="--w:0.12"></b><span>−6%</span></div><div class="bl"><b class="m" style="--w:0.38"></b><span>−19%</span></div></div></div></div>
-  <div class="key"><span><i style="background:#D5202F"></i>errore sul totale dei morti</span><span><i style="background:#F0A6AC"></i>errore sui soli morti non ancora registrati</span></div>
-  <p class="take"><b>Tutti gli errori sono negativi:</b> 720mila è più probabilmente una stima bassa che alta. Gli autori hanno scelto di non correggerla al rialzo.</p>
+  <div class="key"><span><i style="background:#D5202F"></i>Errore sul totale dei morti</span><span><i style="background:#F0A6AC"></i>Errore sui soli morti ancora da registrare</span></div>
+  <p class="take"><b>Nella verifica del 1° febbraio 2026, il modello aveva sottostimato del 6% il totale dei morti e del 19% il numero di quelli ancora da registrare.</b> Secondo gli autori, le cinque verifiche suggeriscono che anche la stima di 720mila sia più probabilmente troppo bassa che troppo alta. Hanno scelto di pubblicarla senza correggerla al rialzo.</p>
 </section>
 
 <section class="band dark">
-  <h2>Da 44,7 milioni di record a 490mila caduti</h2>
-  <p class="sf">Rosstat non pubblica più dati sulla mortalità da metà 2025. Quelli usati dall'inchiesta arrivano da un attacco informatico.</p>
+  <h2>Come si arriva a circa 490mila caduti partendo da 44,7 milioni di voci</h2>
+  <p class="sf">Dalla metà del 2025 Rosstat ha smesso di pubblicare i dati sulla mortalità. L’inchiesta si basa sui dati che due gruppi di hacker hanno sottratto all’istituto e consegnato ai giornalisti.</p>
   <div class="tl">
-    <div class="ev"><div class="d">1 novembre 2026</div><div class="who"><span><svg class="flag" width="30" height="20" viewBox="0 0 30 20"><rect width="30" height="20" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#C8102E"/></svg> Cyber Partisans</span><span><svg class="flag" width="30" height="20" viewBox="0 0 30 20"><rect y="0.00" width="30" height="10.30" fill="#0057B7"/><rect y="10.00" width="30" height="10.30" fill="#FFD700"/></svg> Silent Crow</span></div><div class="t">Gli hacker bielorussi e ucraini annunciano di aver violato Rosstat: accesso al sito e alle reti interne, <b>terabyte di dati</b> sottratti.</div></div>
-    <div class="ev"><div class="d">8 novembre</div><div class="t">Primo lotto ai giornalisti: <b>29,7 milioni di record</b>, quasi tutti gli atti di morte del registro dello stato civile (ZAGS) dal 2021 ad agosto 2026. Senza nomi, ma con gli altri campi.</div></div>
-    <div class="ev"><div class="d">15 novembre</div><div class="t">Secondo lotto: circa <b>15 milioni di record</b> più recenti dal sistema di scambio tra amministrazioni (SMEV), con registrazioni fino al <b>29 settembre 2026</b>.</div></div>
+    <div class="ev"><div class="d">1° novembre 2026</div><div class="who"><span><svg class="flag" width="30" height="20" viewBox="0 0 30 20"><rect width="30" height="20" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#C8102E"/></svg> Cyber Partisans</span><span><svg class="flag" width="30" height="20" viewBox="0 0 30 20"><rect y="0.00" width="30" height="10.30" fill="#0057B7"/><rect y="10.00" width="30" height="10.30" fill="#FFD700"/></svg> Silent Crow</span></div><div class="t">I gruppi Cyber Partisans e Silent Crow, formati da hacker bielorussi e ucraini, annunciano di aver avuto accesso al sito e alle reti interne di Rosstat e di aver sottratto diversi terabyte di dati.</div></div>
+    <div class="ev"><div class="d">8 novembre</div><div class="t">I giornalisti ricevono 29,7 milioni di voci dagli uffici russi dello stato civile (ZAGS). Comprendono quasi tutti gli atti di morte dal 2021 ad agosto 2026. I nomi sono stati rimossi, ma gli altri dati sono presenti.</div></div>
+    <div class="ev"><div class="d">15 novembre</div><div class="t">Arrivano altri 15 milioni circa di voci dal sistema con cui le amministrazioni russe si scambiano i dati (SMEV). Le registrazioni più recenti risalgono al 29 settembre 2026.</div></div>
   </div>
   <div class="fn">
-    <div class="fr"><div class="hd"><div class="n">~44,7 milioni</div><div class="t">di record grezzi nei due lotti: ogni atto compare in più versioni</div></div><div class="b" style="width:100%"></div></div>
-    <div class="fr"><div class="hd"><div class="n">11.658.178</div><div class="t">atti di morte unici, tolte le versioni duplicate</div></div><div class="b" style="width:26.1%"></div></div>
-    <div class="fr r"><div class="hd"><div class="n">490mila</div><div class="t">morti in guerra, almeno: uomini russi tra 18 e 64 anni</div></div><div class="b" style="width:1.1%"></div></div>
+    <div class="fr"><div class="hd"><div class="n">Circa 44,7 milioni</div><div class="t">voci ricevute in due invii. Uno stesso atto può comparire più volte, in versioni diverse</div></div><div class="b" style="width:100%"></div></div>
+    <div class="fr"><div class="hd"><div class="n">11.658.178</div><div class="t">atti di morte distinti, dopo aver eliminato i duplicati</div></div><div class="b" style="width:26.1%"></div></div>
+    <div class="fr r"><div class="hd"><div class="n">Circa 490mila</div><div class="t">uomini russi tra i 18 e i 64 anni identificati tra i morti in guerra. Il conteggio rappresenta un minimo</div></div><div class="b" style="width:1.1%"></div></div>
   </div>
   <div class="cmp">
-    <h3>Come si riconosce un caduto tra gli atti di morte</h3>
-    <p class="h3s">I 490mila sono la somma di tre gruppi, selezionati con criteri diversi.</p>
+    <h3>Come si riconosce un caduto negli atti di morte</h3>
+    <p class="h3s">Gli autori hanno diviso i circa 490mila caduti individuati in tre gruppi, in base alle informazioni presenti negli atti.</p>
     <div class="stk"><div style="width:86.7%;background:#FF5A5F"></div><div style="width:9.2%;background:#B8323C"></div><div style="width:4.1%;background:#8E98AB"></div></div>
     <div class="cg">
-      <div><div class="n"><i style="background:#FF5A5F"></i>425mila</div><div class="t">atti con <b>causa di morte militare</b>: codici ICD delle ferite di guerra, formule militari o codice 6 nel certificato medico</div></div>
-      <div><div class="n"><i style="background:#B8323C"></i>~45mila</div><div class="t">persone <b>dichiarate morte da un tribunale</b>, contate se il decesso è in zona di guerra o, se il luogo è ignoto, in base alla cittadinanza</div></div>
-      <div><div class="n"><i style="background:#8E98AB"></i>~20mila</div><div class="t">atti trovati con <b>altri segnali</b>: professione militare e ferite da esplosione o arma da fuoco, frasi sui combattimenti, morti naturali in zona di guerra</div></div>
+      <div><div class="n"><i style="background:#FF5A5F"></i>425mila</div><div class="t"><b class="ld">La causa di morte rimanda alla guerra.</b>L’atto riporta un codice della classificazione internazionale delle malattie (ICD) che indica una ferita di guerra, una formula usata in ambito militare o il codice 6 nel certificato medico.</div></div>
+      <div><div class="n"><i style="background:#B8323C"></i>Circa 45mila</div><div class="t"><b class="ld">Un tribunale ha dichiarato la morte.</b>Gli autori hanno incluso i casi in cui la morte è avvenuta in una zona di guerra. Quando il luogo era sconosciuto, hanno usato la cittadinanza come criterio.</div></div>
+      <div><div class="n"><i style="background:#8E98AB"></i>Circa 20mila</div><div class="t"><b class="ld">L’atto contiene altri indizi.</b>Tra questi figurano la professione militare associata a ferite da esplosione o da arma da fuoco, riferimenti ai combattimenti o una morte per cause naturali in zona di guerra.</div></div>
     </div>
-    <p class="note">Con il loro metodo, sui dati fermi ad agosto, gli hacker di Cyber Partisans erano arrivati a 380mila. I 44,7 milioni sono la somma dei due lotti (29,7 e circa 15 milioni).</p>
+    <p class="note">I Cyber Partisans, applicando il proprio metodo ai dati disponibili fino ad agosto, avevano contato 380mila caduti. La cifra di 44,7 milioni è la somma delle voci ricevute nei due invii, rispettivamente 29,7 milioni e circa 15 milioni.</p>
   </div>
 </section>
 
 <section class="band">
-  <h2>Perché i dati sono autentici</h2>
-  <p class="sf">Il database è stato incrociato con elenchi nominativi dei caduti, sentenze dei tribunali, il registro delle successioni (44 milioni di record) e altre fughe di dati.</p>
-  <div class="aus"><div class="au"><div class="n">99,9%</div><div class="tx">dei numeri di atto rispetta il formato fissato dall'ordinanza 202n del ministero delle Finanze</div><div class="tr"><b style="width:99.9%"></b></div></div><div class="au"><div class="n">99,88%</div><div class="tx">dei record militari assenti dalle liste di Mediazona segue la numerazione progressiva del proprio ufficio ZAGS (civili maschi della stessa età: 99,61%)</div><div class="tr"><b style="width:99.88%"></b></div></div><div class="au"><div class="n">97%</div><div class="tx">dei numeri di atto citati nelle sentenze dei tribunali è nel database: 3.275 su 3.376. Dei 101 mancanti, 42 hanno evidenti refusi</div><div class="tr"><b style="width:97%"></b></div></div><div class="au"><div class="n">95,1%</div><div class="tx">dei militari caduti noti per nome (lista di Mediazona, BBC Russian Service e volontari) è presente nei dati</div><div class="tr"><b style="width:95.1%"></b></div></div><div class="au"><div class="n">95%</div><div class="tx">di corrispondenza con i nomi citati nelle sentenze e con 1.765 record militari mai pubblicati del progetto «Russia 200»: il database non è stato costruito sulle liste dei giornalisti</div><div class="tr"><b style="width:95%"></b></div></div><div class="au"><div class="n">86,8%</div><div class="tx">dei record è stato abbinato a una persona reale incrociando tutte le fonti: 10,1 milioni su 11,6</div><div class="tr"><b style="width:86.8%"></b></div></div><div class="au"><div class="n">61,1%</div><div class="tx">dei record trova riscontro in una pratica di successione: 7,1 milioni su 11,6</div><div class="tr"><b style="width:61.1%"></b></div></div></div>
+  <h2>Come è stata verificata l’autenticità dei dati</h2>
+  <p class="sf">Gli atti ricevuti erano privi di nomi. Per verificarli, i giornalisti li hanno confrontati con gli elenchi dei caduti identificati per nome, le sentenze dei tribunali, i 44 milioni di voci del registro delle successioni e altri archivi di dati trapelati.</p>
+  <div class="aus"><div class="au"><div class="n">99,9%</div><div class="tx">Quasi tutti i numeri identificativi degli atti seguono il formato previsto dall’ordinanza 202n del ministero delle Finanze russo.</div><div class="tr"><b style="width:99.9%"></b></div></div><div class="au"><div class="n">99,88%</div><div class="tx">Tra i caduti ancora assenti dagli elenchi di Mediazona, questa è la quota di atti il cui numero segue la sequenza dell’ufficio di stato civile che li ha registrati. Per i civili maschi della stessa età la quota è simile (99,61%).</div><div class="tr"><b style="width:99.88%"></b></div></div><div class="au"><div class="n">97%</div><div class="tx">Dei 3.376 numeri di atto citati nelle sentenze, 3.275 compaiono nei dati di Rosstat. Dei 101 senza riscontro, 42 contengono evidenti errori di trascrizione.</div><div class="tr"><b style="width:97%"></b></div></div><div class="au"><div class="n">95,1%</div><div class="tx">È la quota dei caduti identificati per nome da Mediazona, dal servizio russo della BBC e dai volontari per i quali i giornalisti hanno trovato un atto corrispondente.</div><div class="tr"><b style="width:95.1%"></b></div></div><div class="au"><div class="n">95%</div><div class="tx">È la quota di corrispondenze nel confronto con i nomi citati nelle sentenze e con 1.765 schede di militari del progetto «Russia 200». Queste schede erano inedite. Il riscontro indica che i dati di Rosstat contengono informazioni indipendenti dagli elenchi pubblicati dai giornalisti.</div><div class="tr"><b style="width:95%"></b></div></div><div class="au"><div class="n">86,8%</div><div class="tx">Incrociando tutte le fonti, i giornalisti sono riusciti ad associare un atto di morte a una persona identificata in 10,1 milioni di casi su circa 11,6 milioni.</div><div class="tr"><b style="width:86.8%"></b></div></div><div class="au"><div class="n">61,1%</div><div class="tx">Per 7,1 milioni di atti su circa 11,6 milioni, i giornalisti hanno trovato anche una pratica di successione corrispondente.</div><div class="tr"><b style="width:61.1%"></b></div></div></div>
   <div class="two">
-    <div><div class="n">8.365</div><div class="t">celle confrontate con le statistiche settimanali RuSTMF della Scuola superiore di economia per il 2021: coincidono, con scarti di poche unità.</div></div>
-    <div><div class="n">Nessuna manipolazione</div><div class="t">Se morti civili fossero state «riclassificate» come militari, la mortalità maschile non militare sarebbe dovuta calare. Nei dati non succede.</div></div>
+    <div><div class="n">8.365<span>valori confrontati</span></div><div class="t">I giornalisti hanno confrontato i dati del 2021 con le statistiche settimanali sulla mortalità raccolte dalla Scuola superiore di economia (RuSTMF). Gli scarti sono di poche unità.</div></div>
+    <div><div class="ld">Nessun segnale che i civili siano stati contati come militari</div><div class="t">Se morti civili fossero state riclassificate come militari, il numero di decessi maschili attribuiti a cause non militari sarebbe dovuto diminuire. Gli autori non hanno osservato questo calo.</div></div>
   </div>
-  <p class="note">Mancano circa 3mila morti di guerra, quasi tutti del 2022 e di inizio 2023. Dal luglio 2023, con il passaggio di Rosstat al sistema SMEV, i dati coincidono quasi completamente.</p>
+  <p class="note">Tra i morti in guerra già noti da altre fonti, circa 3mila mancano nei dati di Rosstat. Quasi tutti risalgono al 2022 o all’inizio del 2023. Dal luglio 2023, quando Rosstat è passata al sistema di scambio dati tra amministrazioni (SMEV), la corrispondenza è quasi completa.</p>
 </section>
 
 <section class="band alt">
-  <h2>Dove i conti si complicano</h2>
-  <p class="sf">Nelle regioni del fronte e di confine morti civili e militari si mescolano: qui il conteggio applica regole specifiche.</p>
-  <p class="hint">Tocca una regione o una voce della legenda per evidenziarla.</p><div class="mapw" id="ig-map"><svg viewBox="0 0 952 661" width="952" height="661" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <h2>Dove è più difficile distinguere i morti civili dai militari</h2>
+  <p class="sf">Nelle regioni vicine al fronte e al confine tra Russia e Ucraina, anche molti civili sono morti nei combattimenti. Per ridurre il rischio di contarli tra i caduti militari, gli autori hanno tenuto conto del luogo di nascita o di residenza.</p>
+  <p class="hint">Tocca una regione o il suo nome nella legenda per evidenziarla sulla mappa.</p><div class="mapw" id="ig-map"><svg viewBox="0 0 952 661" width="952" height="661" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif">
 <defs><pattern id="hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="9" height="9" fill="#D9D9E0"/><line x1="0" y1="0" x2="0" y2="9" stroke="#8A8A98" stroke-width="4"/></pattern>
 <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity=".18"/></filter></defs>
 <rect width="952" height="661" fill="#E3EEF9"/>
@@ -404,7 +432,7 @@ html, body { background: #fff; overflow-x: clip; }
 <text x="235.9" y="32.1" font-size="16" font-weight="700" fill="#9A9AA8" text-anchor="middle" letter-spacing="2" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" >BIELORUSSIA</text>
 <text x="572.9" y="629.2" font-size="18" font-weight="500" fill="#6E8DB5" text-anchor="middle" letter-spacing="0"  font-style="italic">Mar Nero</text>
 <text x="627.6" y="478.3" font-size="14" font-weight="500" fill="#6E8DB5" text-anchor="middle" letter-spacing="0"  font-style="italic">Mar d'Azov</text>
-<text x="669.8" y="353.1" font-size="16" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0"  >Donetsk</text>
+<text x="669.8" y="367.9" font-size="16" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0"  >Donetsk</text>
 <text x="714.0" y="298.6" font-size="16" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0"  >Luhansk</text>
 <text x="572.9" y="407.7" font-size="15" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0"  >Zaporizhzhia</text>
 <text x="488.6" y="446.2" font-size="15" font-weight="800" fill="#fff" text-anchor="middle" letter-spacing="0"  >Kherson</text>
@@ -415,38 +443,38 @@ html, body { background: #fff; overflow-x: clip; }
 <text x="505.5" y="526.5" font-size="16" font-weight="800" fill="#1A1A2E" text-anchor="middle" letter-spacing="0" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" >Crimea</text>
 <text x="358.9" y="226.0" font-size="14" font-weight="600" fill="#4A4A5A" text-anchor="middle" letter-spacing="0" paint-order="stroke" stroke="#fff" stroke-width="4" stroke-linejoin="round" >Kyiv</text>
 <circle cx="358.9" cy="208.7" r="4.5" fill="#1A1A2E"/>
-<g class="co"><line x1="509.7" y1="561.8" x2="179.7" y2="562.8" stroke="#B22234" stroke-width="2"/><circle cx="509.7" cy="561.8" r="8" fill="#B22234" stroke="#fff" stroke-width="3"/><g filter="url(#sh)"><rect x="179.7" y="521.8" width="278" height="82" rx="6" fill="#fff" stroke="#B22234" stroke-width="2"/></g><circle cx="179.7" cy="521.8" r="14" fill="#B22234"/><text x="179.7" y="526.8" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">A</text><text x="195.7" y="547.8" font-size="16" font-weight="800" fill="#1A1A2E">Simferopoli</text><text x="195.7" y="569.8" font-size="15" font-weight="500" fill="#1A1A2E">~12mila atti assenti dai dati,</text><text x="195.7" y="591.8" font-size="15" font-weight="500" fill="#1A1A2E">per lo più civili</text></g><g class="pl"><circle cx="509.7" cy="561.8" r="17" fill="#B22234" stroke="#fff" stroke-width="3"/><text x="509.7" y="568.8" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">A</text></g>
-<g class="co"><line x1="674.0" y1="327.8" x2="714.0" y2="106.8" stroke="#B22234" stroke-width="2"/><circle cx="674.0" cy="327.8" r="8" fill="#B22234" stroke="#fff" stroke-width="3"/><g filter="url(#sh)"><rect x="714.0" y="65.8" width="236" height="82" rx="6" fill="#fff" stroke="#B22234" stroke-width="2"/></g><circle cx="714.0" cy="65.8" r="14" fill="#B22234"/><text x="714.0" y="70.8" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">B</text><text x="730.0" y="91.8" font-size="16" font-weight="800" fill="#1A1A2E">Bakhmut</text><text x="730.0" y="113.8" font-size="15" font-weight="500" fill="#1A1A2E">molti caduti della Wagner</text><text x="730.0" y="135.8" font-size="15" font-weight="500" fill="#1A1A2E">mancano dai dati</text></g><g class="pl"><circle cx="674.0" cy="327.8" r="17" fill="#B22234" stroke="#fff" stroke-width="3"/><text x="674.0" y="334.8" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">B</text></g>
-<g class="co"><line x1="746.0" y1="414.8" x2="706.0" y2="550.8" stroke="#B22234" stroke-width="2"/><circle cx="746.0" cy="414.8" r="8" fill="#B22234" stroke="#fff" stroke-width="3"/><g filter="url(#sh)"><rect x="706.0" y="509.8" width="236" height="82" rx="6" fill="#fff" stroke="#B22234" stroke-width="2"/></g><circle cx="706.0" cy="509.8" r="14" fill="#B22234"/><text x="706.0" y="514.8" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">C</text><text x="722.0" y="535.8" font-size="16" font-weight="800" fill="#1A1A2E">Rostov sul Don</text><text x="722.0" y="557.8" font-size="15" font-weight="500" fill="#1A1A2E">~300 morti militari</text><text x="722.0" y="579.8" font-size="15" font-weight="500" fill="#1A1A2E">mancanti in 2 uffici ZAGS</text></g><g class="pl"><circle cx="746.0" cy="414.8" r="17" fill="#B22234" stroke="#fff" stroke-width="3"/><text x="746.0" y="421.8" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">C</text></g>
+<g class="co"><line x1="509.7" y1="561.8" x2="179.7" y2="562.8" stroke="#B22234" stroke-width="2"/><circle cx="509.7" cy="561.8" r="8" fill="#B22234" stroke="#fff" stroke-width="3"/><g filter="url(#sh)"><rect x="179.7" y="521.8" width="244" height="82" rx="6" fill="#fff" stroke="#B22234" stroke-width="2"/></g><circle cx="179.7" cy="521.8" r="14" fill="#B22234"/><text x="179.7" y="526.8" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">A</text><text x="195.7" y="547.8" font-size="16" font-weight="800" fill="#1A1A2E">Simferopoli</text><text x="195.7" y="569.8" font-size="15" font-weight="500" fill="#1A1A2E">Mancano circa 12mila atti,</text><text x="195.7" y="591.8" font-size="15" font-weight="500" fill="#1A1A2E">per lo più di civili</text></g><g class="pl"><circle cx="509.7" cy="561.8" r="17" fill="#B22234" stroke="#fff" stroke-width="3"/><text x="509.7" y="568.8" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">A</text></g>
+<g class="co"><line x1="674.0" y1="327.8" x2="690.0" y2="106.8" stroke="#B22234" stroke-width="2"/><circle cx="674.0" cy="327.8" r="8" fill="#B22234" stroke="#fff" stroke-width="3"/><g filter="url(#sh)"><rect x="690.0" y="65.8" width="253" height="82" rx="6" fill="#fff" stroke="#B22234" stroke-width="2"/></g><circle cx="690.0" cy="65.8" r="14" fill="#B22234"/><text x="690.0" y="70.8" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">B</text><text x="706.0" y="91.8" font-size="16" font-weight="800" fill="#1A1A2E">Bakhmut</text><text x="706.0" y="113.8" font-size="15" font-weight="500" fill="#1A1A2E">Mancano molti combattenti</text><text x="706.0" y="135.8" font-size="15" font-weight="500" fill="#1A1A2E">del gruppo Wagner morti qui</text></g><g class="pl"><circle cx="674.0" cy="327.8" r="17" fill="#B22234" stroke="#fff" stroke-width="3"/><text x="674.0" y="334.8" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">B</text></g>
+<g class="co"><line x1="746.0" y1="414.8" x2="694.0" y2="544.8" stroke="#B22234" stroke-width="2"/><circle cx="746.0" cy="414.8" r="8" fill="#B22234" stroke="#fff" stroke-width="3"/><g filter="url(#sh)"><rect x="694.0" y="492.8" width="244" height="104" rx="6" fill="#fff" stroke="#B22234" stroke-width="2"/></g><circle cx="694.0" cy="492.8" r="14" fill="#B22234"/><text x="694.0" y="497.8" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">C</text><text x="710.0" y="518.8" font-size="16" font-weight="800" fill="#1A1A2E">Rostov sul Don</text><text x="710.0" y="540.8" font-size="15" font-weight="500" fill="#1A1A2E">Mancano circa 300 morti</text><text x="710.0" y="562.8" font-size="15" font-weight="500" fill="#1A1A2E">militari registrate in due</text><text x="710.0" y="584.8" font-size="15" font-weight="500" fill="#1A1A2E">uffici di stato civile</text></g><g class="pl"><circle cx="746.0" cy="414.8" r="17" fill="#B22234" stroke="#fff" stroke-width="3"/><text x="746.0" y="421.8" font-size="20" font-weight="800" fill="#fff" text-anchor="middle">C</text></g>
 </svg></div>
   <div class="ml">
-    <div data-c="A"><i style="background:#0057B7"></i><div><b>Donetsk e Luhansk</b>: contati solo i soldati non locali, filtro sui civili</div></div>
-    <div data-c="B"><i style="background:#5E95D6"></i><div><b>Zaporizhzhia e Kherson</b>: filtro sui civili; zone di combattimento dal 2022</div></div>
-    <div data-c="C"><i style="background:#C6DAF2"></i><div><b>Kharkiv</b>: zona di combattimento dal 2022, dove contano anche le morti naturali</div></div>
-    <div data-c="D"><i style="background:#B8860B"></i><div><b>Belgorod, Kursk, Bryansk</b> (Russia): filtro sui civili</div></div>
-    <div data-c="X"><i style="background:repeating-linear-gradient(45deg,#8A8A98 0 3px,#D9D9E0 3px 7px)"></i><div><b>Crimea</b>: esclusa del tutto dal conteggio</div></div>
+    <div data-c="A"><i style="background:#0057B7"></i><div><b>Donetsk e Luhansk</b>Il conteggio include soltanto i soldati che non erano nati nella regione e non vi risiedevano.</div></div>
+    <div data-c="B"><i style="background:#5E95D6"></i><div><b>Zaporizhzhia e Kherson</b>Sono considerate zone di combattimento dal 2022. Gli autori escludono chi vi era nato o vi risiedeva per ridurre il rischio di contare anche i civili.</div></div>
+    <div data-c="C"><i style="background:#C6DAF2"></i><div><b>Kharkiv</b>È considerata zona di combattimento dal 2022. Il conteggio dei caduti comprende anche le morti per cause naturali.</div></div>
+    <div data-c="D"><i style="background:#B8860B"></i><div><b>Belgorod, Kursk e Bryansk</b>In queste regioni russe gli autori escludono dal conteggio chi vi era nato o vi risiedeva.</div></div>
+    <div data-c="X"><i style="background:repeating-linear-gradient(45deg,#8A8A98 0 3px,#D9D9E0 3px 7px)"></i><div><b>Crimea</b>È interamente esclusa dal conteggio.</div></div>
   </div>
-  <h3>Gli atti che mancano dalla fuga di dati</h3>
-  <p class="h3s">Circa 20mila morti note da altre fonti non compaiono nei dati di Rosstat. Sono tutte del periodo 2022-luglio 2023 e si concentrano in tre punti.</p>
+  <h3>Quali atti mancano nei dati consegnati ai giornalisti</h3>
+  <p class="h3s">Circa 20mila decessi documentati da altre fonti, sia civili sia militari, non compaiono nei dati sottratti a Rosstat. Risalgono tutti al periodo tra il 2022 e luglio 2023. Le lacune si concentrano in tre aree.</p>
   <div class="ml pins">
-    <div><i class="pb">A</i><div><b>Simferopoli</b>: circa 12mila atti di tre uffici ZAGS, per lo più civili</div></div>
-    <div><i class="pb">B</i><div><b>Donetsk e Luhansk</b>: oltre 3mila atti, molti di uomini della Wagner uccisi a Bakhmut</div></div>
-    <div><i class="pb">C</i><div><b>Rostov sul Don</b>: circa 300 morti militari di due uffici ZAGS</div></div>
+    <div><i class="pb">A</i><div><b>Simferopoli</b>Mancano circa 12mila atti di tre uffici di stato civile. Riguardano soprattutto civili.</div></div>
+    <div><i class="pb">B</i><div><b>Donetsk e Luhansk</b>Mancano oltre 3mila atti. Molti riguardano combattenti del gruppo Wagner uccisi a Bakhmut.</div></div>
+    <div><i class="pb">C</i><div><b>Rostov sul Don</b>Mancano gli atti relativi a circa 300 morti militari registrate in due uffici di stato civile.</div></div>
   </div>
-  <p class="note">Il filtro elimina i nati o residenti locali in otto regioni (Donetsk, Luhansk, Zaporizhzhia, Kherson, Belgorod, Kursk, Bryansk e Crimea) e intercetta il 95% dei civili visibili. Errore al rialzo stimato: circa 0,7%.</p>
+  <p class="note">In otto regioni (Donetsk, Luhansk, Zaporizhzhia, Kherson, Belgorod, Kursk, Bryansk e Crimea) il criterio del luogo di nascita o di residenza permette di escludere il 95% dei civili riconoscibili nei dati. Gli autori stimano che i civili rimasti nel conteggio facciano salire il totale dei caduti di circa lo 0,7%.</p>
 </section>
 
 <section class="band">
-  <h2>Tre avvertenze sul metodo</h2>
+  <h2>Chi rientra nel conteggio e quali informazioni mancano</h2>
   <div class="nts" style="margin-top:30px">
-    <div><div class="n">18-64 anni</div><div class="t">È la definizione di «militare» usata nel conteggio: uomini con cittadinanza russa, o non indicata ma non straniera.</div></div>
-    <div><div class="n">Prima del 2023</div><div class="t">i dati non permettono di isolare con certezza le morti militari: Rosstat usava spesso il codice 10, «ignoto».</div></div>
-    <div><div class="n">Codice 5 → 11</div><div class="t">Da luglio 2025 Rosstat non assegna più in automatico il codice 5, «servizio militare», ma l'11, «altro». La professione è stata ripristinata dove una versione dell'atto la indicava.</div></div>
+    <div><div class="n">Uomini tra i 18 e i 64 anni</div><div class="t">In questa fascia di età gli autori cercano gli atti che indicano una morte legata alla guerra. Includono gli uomini con cittadinanza russa e quelli per cui la cittadinanza non è indicata. Escludono chi risulta cittadino straniero.</div></div>
+    <div><div class="n">Prima del 2023</div><div class="t">Era più difficile distinguere le morti militari dalle altre perché Rosstat usava spesso il codice 10, che significa «ignoto».</div></div>
+    <div><div class="n">La professione negli atti</div><div class="t">Da luglio 2025 Rosstat ha sostituito il codice assegnato in automatico, passando dal 5 («servizio militare») all’11 («altro»). Quando una versione precedente dello stesso atto riportava la professione, gli autori hanno recuperato quell’informazione.</div></div>
   </div>
 </section>
 
 <footer class="foot">
-  <div><b>Fonte:</b> Mediazona e Meduza, «Данные Росстата раскрыли гибель на войне 500 тысяч человек — и эти данные настоящие» (23 novembre 2026), su dati Rosstat diffusi da Cyber Partisans e Silent Crow. Confini: Natural Earth.<br><b>Elaborazione:</b> @putino</div>
+  <div><b>Fonte:</b> Mediazona e Meduza, «Данные Росстата раскрыли гибель на войне 500 тысяч человек — и эти данные настоящие», 23 novembre 2026. L’inchiesta si basa sui dati di Rosstat diffusi da Cyber Partisans e Silent Crow. Confini della mappa da Natural Earth.<br><b>Elaborazione:</b> @putino</div>
 </footer>
 
 </div>
@@ -490,7 +518,7 @@ function lineChart(fig, cfg) {
     let o = '';
     cfg.yt.forEach(a => {
       o += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + Y(a[0]) + '" y2="' + Y(a[0]) + '" stroke="' + GRID + '"/>';
-      o += '<text x="' + L + '" y="' + (Y(a[0]) - 6) + '" font-size="' + fs + '" fill="' + MUT + '">' + (nr && a[2] ? a[2] : a[1]) + '</text>';
+      { const yl = nr && a[2] ? a[2] : a[1], ar = Array.isArray(yl) ? yl : [yl]; ar.forEach((tx, k) => { o += '<text x="' + L + '" y="' + (Y(a[0]) - 6 - (ar.length - 1 - k) * (fs + 3)) + '" font-size="' + fs + '" fill="' + MUT + '">' + tx + '</text>'; }); }
     });
     o += '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + Y(0) + '" y2="' + Y(0) + '" stroke="' + INK + '" stroke-width="1.5"/>';
     cfg.xt.forEach(a => {
@@ -528,8 +556,16 @@ function lineChart(fig, cfg) {
       o += '<circle cx="' + x + '" cy="' + y + '" r="' + (nr ? 4.5 : 6) + '" fill="' + s.c + '" stroke="#fff" stroke-width="2"/>';
       if (s.big) {
         const dy = s.dy ? s.dy[nr ? 1 : 0] : 0;
-        o += '<text class="n" x="' + (x + (nr ? 9 : 16)) + '" y="' + (y + (nr ? 7 : 12) + dy) + '" font-size="' + (nr ? 23 : s.bs || 42) + '" fill="' + s.c + '">' + s.big + '</text>';
-        o += '<text x="' + (x + (nr ? 9 : 17)) + '" y="' + (y + (nr ? 23 : (s.bs ? 30 : 36)) + dy) + '" font-size="' + (nr ? 12 : 15) + '" fill="' + INK + '">' + s.sub + '</text>';
+        const bx = x + (nr ? 9 : 16);
+        if (nr) {
+          let yy = y + dy + (s.pre ? -6 : 7);
+          if (s.pre) { o += '<text x="' + bx + '" y="' + yy + '" font-size="12" fill="' + INK + '">' + s.pre + '</text>'; yy += 22; }
+          o += '<text class="n" x="' + bx + '" y="' + yy + '" font-size="23" fill="' + s.c + '">' + s.big + '</text>';
+          (s.subN || [s.sub]).forEach((tx, k) => { o += '<text x="' + bx + '" y="' + (yy + 16 + k * 14) + '" font-size="12" fill="' + INK + '">' + tx + '</text>'; });
+        } else {
+          o += '<text class="n" x="' + bx + '" y="' + (y + 12 + dy) + '" font-size="' + (s.bs || 42) + '" fill="' + s.c + '">' + (s.pre ? s.pre + ' ' : '') + s.big + '</text>';
+          o += '<text x="' + (bx + 1) + '" y="' + (y + (s.bs ? 30 : 36) + dy) + '" font-size="15" fill="' + INK + '">' + s.sub + '</text>';
+        }
       } else if (s.lab && !nr) {
         o += '<rect x="' + (x + 14) + '" y="' + (y - 7) + '" width="14" height="14" rx="2" fill="' + s.c + '"/>';
         o += '<text x="' + (x + 36) + '" y="' + (y + 6) + '" font-size="16" font-weight="700" fill="' + INK + '">' + s.lab + '</text>';
@@ -582,7 +618,7 @@ function heatChart(fig) {
     for (let i = 0; i < 18; i++) { pts.push([LBL + (18 - i) * CW, TOP + i * CH]); pts.push([LBL + (18 - i) * CW, TOP + (i + 1) * CH]); }
     pts.push([LBL + 18 * CW, TOP + 18 * CH]);
     o += '<polygon points="' + pts.map(p => p[0].toFixed(1) + ',' + p[1]).join(' ') + '" fill="url(#hh2)"/>';
-    o += '<text x="' + LBL + '" y="' + (TOP - 9) + '" font-size="' + (nr ? 12 : 15) + '" fill="' + MUT + '">Trimestri tra la morte e la registrazione →</text>';
+    o += '<text x="' + LBL + '" y="' + (TOP - 9) + '" font-size="' + (nr ? 11 : 15) + '" fill="' + MUT + '">Trimestri trascorsi dalla morte alla registrazione →</text>';
     rows.forEach((r, i) => {
       const y = TOP + i * CH;
       o += '<text x="' + (LBL - 6) + '" y="' + (y + CH / 2 + (nr ? 4 : 6)) + '" font-size="' + (nr ? 11.5 : 15.5) + '" fill="' + INK + '" text-anchor="end" font-weight="' + (r.indexOf('T1') === 0 ? 700 : 400) + '">' + (nr ? r.replace(' 20', " '") : r) + '</text>';
@@ -595,13 +631,13 @@ function heatChart(fig) {
       }
     });
     for (let j = 0; j < 18; j++) if (!nr || j % 2 === 0) o += '<text x="' + (LBL + j * CW + CW / 2) + '" y="' + (TOP + 18 * CH + (nr ? 16 : 22)) + '" font-size="' + (nr ? 11 : 15) + '" fill="' + MUT + '" text-anchor="middle">' + j + '</text>';
-    const cx = LBL + (nr ? 12 : 12.6) * CW, cy = TOP + (nr ? 13.4 : 13.2) * CH;
+    const cx = LBL + (nr ? 11.8 : 12.3) * CW, cy = TOP + (nr ? 13.4 : 13.2) * CH;
     if (nr) {
-      o += '<rect x="' + (cx - 66) + '" y="' + (cy - 16) + '" width="132" height="40" fill="' + bg + '"/>';
-      o += '<text x="' + cx + '" y="' + cy + '" font-size="12" font-weight="800" fill="' + INK + '" text-anchor="middle">Atti che devono</text><text x="' + cx + '" y="' + (cy + 15) + '" font-size="12" font-weight="800" fill="' + INK + '" text-anchor="middle">ancora arrivare</text>';
+      o += '<rect x="' + (cx - 92) + '" y="' + (cy - 16) + '" width="184" height="56" fill="' + bg + '"/>';
+      o += '<text x="' + cx + '" y="' + cy + '" font-size="12" font-weight="800" fill="' + INK + '" text-anchor="middle">Registrazioni successive</text><text x="' + cx + '" y="' + (cy + 15) + '" font-size="12" font-weight="800" fill="' + INK + '" text-anchor="middle">al 30 giugno 2026</text><text x="' + cx + '" y="' + (cy + 31) + '" font-size="11" fill="' + INK + '" text-anchor="middle">Il modello stima quante saranno</text>';
     } else {
-      o += '<rect x="' + (cx - 170) + '" y="' + (cy - 34) + '" width="340" height="84" fill="' + bg + '"/>';
-      o += '<text x="' + cx + '" y="' + cy + '" font-size="21" font-weight="800" fill="' + INK + '" text-anchor="middle">Atti che devono ancora arrivare</text><text x="' + cx + '" y="' + (cy + 28) + '" font-size="17" fill="' + INK + '" text-anchor="middle">è la parte che il modello deve stimare</text>';
+      o += '<rect x="' + (cx - 236) + '" y="' + (cy - 34) + '" width="472" height="84" fill="' + bg + '"/>';
+      o += '<text x="' + cx + '" y="' + cy + '" font-size="20" font-weight="800" fill="' + INK + '" text-anchor="middle">Registrazioni successive al 30 giugno 2026</text><text x="' + cx + '" y="' + (cy + 28) + '" font-size="17" fill="' + INK + '" text-anchor="middle">Il modello stima quante saranno</text>';
     }
     o += '<g class="ho" visibility="hidden" fill="none"><rect stroke="' + INK + '" stroke-width="2.5"/><rect stroke="#fff" stroke-width="1.5"/></g>';
     svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); svg.setAttribute('width', W); svg.setAttribute('height', H);
@@ -618,9 +654,9 @@ function heatChart(fig) {
     ho.querySelectorAll('rect').forEach((rc, k) => { const d = k ? 2.25 : 0; rc.setAttribute('x', x + d); rc.setAttribute('y', y + d); rc.setAttribute('width', st.CW - 2 * d); rc.setAttribute('height', st.CH - 2 * d); });
     const when = j === 0 ? 'nello stesso trimestre' : j === 1 ? 'dopo 1 trimestre' : 'dopo ' + j + ' trimestri';
     let val;
-    if (j >= 18 - i) val = 'atti non ancora arrivati';
-    else { const v = j < vals[i].length ? vals[i][j] : null; val = v === null ? 'meno di 100 atti' : '<b>circa ' + fmt(Math.round(v * 1000)) + ' atti</b>'; }
-    tip.innerHTML = '<b>Morti nel ' + rows[i] + '</b><br>registrate ' + when + ':<br>' + val;
+    if (j >= 18 - i) val = null;
+    else { const v = j < vals[i].length ? vals[i][j] : null; val = v === null ? 'Meno di 100 atti' : '<b>Circa ' + fmt(Math.round(v * 1000)) + ' atti</b>'; }
+    tip.innerHTML = '<b>Decessi nel ' + rows[i] + '</b><br>' + (val === null ? 'Registrazioni successive al 30 giugno 2026' : 'Registrati ' + when + '<br>' + val);
     placeTip(fig, tip, x + st.CW / 2, y);
   };
   svg.addEventListener('pointermove', move); svg.addEventListener('pointerdown', move);
@@ -633,45 +669,45 @@ const r5 = x => Math.round(x / 5) * 5;
 const years = [[2023, '2023'], [2024, '2024'], [2025, '2025'], [2026, '2026']];
 const figCum = document.getElementById('fig-cum');
 if (figCum) lineChart(figCum, {
-  x0: 2022.15, x1: 2026.62, y1: 900, hW: 600, hN: 380, rW: 176, rN: 88,
-  yt: [[200, '200'], [400, '400'], [600, '600'], [800, '800mila morti', '800mila']], xt: years, vl: [2026, 'da qui: previsione'],
+  x0: 2022.15, x1: 2026.62, y1: 900, hW: 600, hN: 390, rW: 196, rN: 94,
+  yt: [[200, '200'], [400, '400'], [600, '600'], [800, '800mila morti', '800mila']], xt: years, vl: [2026, 'Da qui inizia la previsione del modello'],
   band: D.cum.band, area: 2023.7,
   series: [
-    { pts: D.cum.est, c: RED, w: 4.5, dash: 2026, big: '720mila', sub: 'morti stimati' },
-    { pts: D.cum.reg, c: INK, w: 3, big: '488mila', sub: 'già registrati' }
+    { pts: D.cum.est, c: RED, w: 4.5, dash: 2026, big: '720mila', sub: 'morti stimate in totale', subN: ['morti stimate', 'in totale'] },
+    { pts: D.cum.reg, c: INK, w: 3, big: '488mila', sub: 'morti già registrate', subN: ['morti già', 'registrate'] }
   ],
-  marks: [[2024, '~80mila'], [2025, '~250mila'], [2026, '~530mila']],
+  marks: [[2024, 'circa 80mila'], [2025, 'circa 250mila'], [2026, 'circa 530mila']],
   extra: g => {
     if (g.nr) return '';
     const ex = g.X(2026.61), gx = g.X(2026.36), gy = g.Y((interp(D.cum.est, 2026.36) + interp(D.cum.reg, 2026.36)) / 2), tx = g.X(2023.95), ty = g.Y(710);
-    return '<path d="M' + (tx + 312) + ',' + (ty + 8) + ' Q' + gx + ',' + (ty + 8) + ' ' + gx + ',' + (gy - 6) + '" fill="none" stroke="' + INK + '" stroke-width="1.2"/><circle cx="' + gx + '" cy="' + gy + '" r="3.5" fill="' + INK + '"/>' +
-      '<text x="' + tx + '" y="' + ty + '" font-size="19" font-weight="800" fill="' + INK + '">Il divario: circa 230mila morti</text><text x="' + tx + '" y="' + (ty + 25) + '" font-size="17" fill="' + INK + '">stimati, ma non ancora nei registri</text>' +
-      '<text x="' + (ex + 17) + '" y="' + (g.Y(855) + 2) + '" font-size="15" fill="' + MUT + '">margine d’incertezza:</text><text x="' + (ex + 17) + '" y="' + (g.Y(855) + 22) + '" font-size="15" fill="' + MUT + '">fino a ~860mila</text>';
+    return '<path d="M' + (tx + 318) + ',' + (ty + 19) + ' Q' + gx + ',' + (ty + 19) + ' ' + gx + ',' + (gy - 6) + '" fill="none" stroke="' + INK + '" stroke-width="1.2"/><circle cx="' + gx + '" cy="' + gy + '" r="3.5" fill="' + INK + '"/>' +
+      '<text x="' + tx + '" y="' + ty + '" font-size="19" font-weight="800" fill="' + INK + '">Circa 230mila morti</text><text x="' + tx + '" y="' + (ty + 25) + '" font-size="17" fill="' + INK + '">ancora da registrare, secondo la stima</text>' +
+      '<text x="' + (ex + 17) + '" y="' + (g.Y(855) - 14) + '" font-size="15" font-weight="700" fill="' + MUT + '">Circa 860mila</text><text x="' + (ex + 17) + '" y="' + (g.Y(855) + 4) + '" font-size="15" fill="' + MUT + '">limite superiore</text><text x="' + (ex + 17) + '" y="' + (g.Y(855) + 22) + '" font-size="15" fill="' + MUT + '">della stima</text>';
   },
-  tip: (t, v) => { const e = r5(v[0]), r = Math.min(r5(v[1]), e); return '<b>' + ym(t) + (t > 2026 ? ' · previsione' : '') + '</b><br>' + sw(RED) + 'Stimati: ~' + e + 'mila<br>' + sw('#fff') + 'Registrati: ~' + r + 'mila<br>Divario: ~' + (e - r) + 'mila'; }
+  tip: (t, v) => { const e = r5(v[0]), r = Math.min(r5(v[1]), e); return '<b>' + ym(t) + '</b>' + (t > 2026 ? '<br>Previsione del modello' : '') + '<br>' + sw(RED) + 'Morti stimate in totale: circa ' + e + 'mila<br>' + sw('#fff') + 'Morti già registrate: circa ' + r + 'mila<br>Morti ancora da registrare, secondo la stima: circa ' + (e - r) + 'mila'; }
 });
 const figWeek = document.getElementById('fig-week');
 if (figWeek) lineChart(figWeek, {
-  x0: 2022.15, x1: 2026.62, y1: 8000, hW: 400, hN: 300, rW: 176, rN: 88,
-  yt: [[2000, '2.000'], [4000, '4.000'], [6000, '6.000 morti a settimana', '6.000 a settimana']], xt: years, vl: [2026, 'previsione'],
+  x0: 2022.15, x1: 2026.62, y1: 8000, hW: 400, hN: 310, rW: 196, rN: 94,
+  yt: [[2000, '2.000'], [4000, '4.000'], [6000, '6.000 morti a settimana', '6.000 a settimana']], xt: years, vl: [2026, 'Previsione del modello'],
   area: 2023.7,
   series: [
-    { pts: D.week.est, c: RED, w: 2.5, dash: 2026, big: '~5.500', sub: 'stimati', bs: 34 },
-    { pts: D.week.reg, c: INK, w: 2, big: '<1.000', sub: 'già registrati', bs: 34, dy: [-4, -8] }
+    { pts: D.week.est, c: RED, w: 2.5, dash: 2026, pre: 'Circa', big: '5.500', sub: 'morti stimate', bs: 28 },
+    { pts: D.week.reg, c: INK, w: 2, pre: 'Meno di', big: '1.000', sub: 'morti già registrate', subN: ['morti già', 'registrate'], bs: 28, dy: [-4, -42] }
   ],
-  tip: (t, v) => { const e = Math.round(v[0] / 100) * 100, r = Math.min(Math.round(v[1] / 100) * 100, e); return '<b>' + ym(t) + (t > 2026 ? ' · previsione' : '') + '</b><br>' + sw(RED) + 'Stimati: ~' + fmt(e) + ' a settimana<br>' + sw('#fff') + 'Registrati: ~' + fmt(r) + ' a settimana'; }
+  tip: (t, v) => { const e = Math.round(v[0] / 100) * 100, r = Math.min(Math.round(v[1] / 100) * 100, e); return '<b>' + ym(t) + '</b>' + (t > 2026 ? '<br>Previsione del modello' : '') + '<br>' + sw(RED) + 'Morti stimate nella settimana: circa ' + fmt(e) + '<br>' + sw('#fff') + 'Morti già registrate per la stessa settimana: circa ' + fmt(r); }
 });
 const figChan = document.getElementById('fig-chan');
 if (figChan) lineChart(figChan, {
-  x0: -3, x1: 31, y1: 0.30, hW: 380, hN: 290, rW: 236, rN: 12, snap: true,
-  yt: [[0.1, '0,1'], [0.2, '0,2'], [0.3, '0,3 · intensità di registrazione, unità convenzionali', '0,3 · intensità']],
+  x0: -3, x1: 31, y1: 0.30, hW: 380, hN: 300, rW: 236, rN: 12, snap: true,
+  yt: [[0.1, '0,1'], [0.2, '0,2'], [0.3, '0,3 · frequenza di registrazione su una scala convenzionale', ['0,3 · frequenza di registrazione', 'su una scala convenzionale']]],
   xt: [[0, 'gen 2024', "gen '24"], [6, 'lug', 'lug'], [12, 'gen 2025', "gen '25"], [18, 'lug', 'lug'], [24, 'gen 2026', "gen '26"], [30, 'lug', 'lug']],
   series: [
-    { pts: D.chan.mil, c: INK, w: 2.6, lab: 'Certificato dei militari' },
+    { pts: D.chan.mil, c: INK, w: 2.6, lab: 'Certificato militare' },
     { pts: D.chan.crt, c: AMB, w: 2.6, lab: 'Sentenza del tribunale' },
     { pts: D.chan.med, c: BLUE, w: 2.6, lab: 'Certificato medico' }
   ],
-  tip: (t, v) => { const y = 2024 + Math.floor(t / 12), m = ((t % 12) + 12) % 12; return '<b>' + MONTHS[m] + ' ' + y + '</b><br>' + sw('#fff') + 'Certificato dei militari: ' + fmt(v[0], 2) + '<br>' + sw('#E0A030') + 'Sentenza del tribunale: ' + fmt(v[1], 2) + '<br>' + sw('#5E95D6') + 'Certificato medico: ' + fmt(v[2], 2); }
+  tip: (t, v) => { const y = 2024 + Math.floor(t / 12), m = ((t % 12) + 12) % 12; return '<b>' + MONTHS[m] + ' ' + y + '</b><br>' + sw('#fff') + 'Certificato militare: ' + fmt(v[0], 2) + '<br>' + sw('#E0A030') + 'Sentenza del tribunale: ' + fmt(v[1], 2) + '<br>' + sw('#5E95D6') + 'Certificato medico: ' + fmt(v[2], 2); }
 });
 const figHeat = document.getElementById('fig-heat');
 if (figHeat) heatChart(figHeat);
@@ -689,7 +725,7 @@ if (mw) {
   const fit = () => {
     const nr = mw.clientWidth < 620; mw.classList.toggle('nr', nr); svg.setAttribute('viewBox', nr ? '392 0 560 661' : '0 0 952 661');
     offView.concat(kyiv).forEach(t => { t.style.display = nr ? 'none' : ''; });
-    if (don) don.setAttribute('dy', nr ? 19 : 9);
+    if (don) don.setAttribute('dy', nr ? 10 : 0);
     if (khe) khe.setAttribute('dx', nr ? 16 : 0);
   };
   let cur = null;
